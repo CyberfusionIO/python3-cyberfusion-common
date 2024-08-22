@@ -7,7 +7,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="python3-cyberfusion-common",
-    version="2.10.11.3.1",
+    version="2.10.11.3.2",
     description="Common utilities.",
     long_description=long_description,
     long_description_content_type="text/markdown",
