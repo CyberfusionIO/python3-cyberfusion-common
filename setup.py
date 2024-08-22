@@ -7,7 +7,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="python3-cyberfusion-common",
-    version="2.10.11.3.1",
+    version="2.10.11.3.2",
     description="Common utilities.",
     long_description=long_description,
     long_description_content_type="text/markdown",
@@ -20,7 +20,7 @@ setup(
     data_files=[],
     install_requires=[
         "cached_property==1.5.2",
-        "psutil==5.8.0",
+        "psutil==5.9.4",
         "requests==2.28.1",
     ],
 )

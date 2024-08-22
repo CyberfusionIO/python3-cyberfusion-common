@@ -1,3 +1,9 @@
+python3-cyberfusion-common (2.10.11.3.2) unstable; urgency=low
+
+  - Add pydist file for Depend-ing packages
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Thu, 22 Aug 2024 15:11:00 +0100
+
 python3-cyberfusion-common (2.10.11.3.1) unstable; urgency=low
 
   - Publish to GitHub
