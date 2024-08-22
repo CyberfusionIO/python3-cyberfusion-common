@@ -20,7 +20,7 @@ setup(
     data_files=[],
     install_requires=[
         "cached_property==1.5.2",
-        "psutil==5.8.0",
+        "psutil==5.9.4",
         "requests==2.28.1",
     ],
 )
