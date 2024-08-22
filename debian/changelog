@@ -1,0 +1,632 @@
+python3-cyberfusion-common (2.10.11.3.1) unstable; urgency=low
+
+  - Publish to GitHub
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Thu, 22 Aug 2024 14:01:00 +0100
+
+python3-cyberfusion-common (2.10.11.3) unstable; urgency=low
+
+  - Update EmailAddresses enum
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Sun, 04 Aug 2024 16:16:00 +0100
+
+python3-cyberfusion-common (2.10.11.2.1) unstable; urgency=low
+
+  - Fix requests dependency version
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Mon, 08 Jul 2024 21:07:00 +0100
+
+python3-cyberfusion-common (2.10.11.2) unstable; urgency=low
+
+  - Return user-friendly error when config file doesn't exist
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Tue, 14 May 2024 12:10:00 +0100
+
+python3-cyberfusion-common (2.10.11.1) unstable; urgency=low
+
+  - Publish to PyPI
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Mon, 04 Sep 2023 19:31:00 +0100
+
+python3-cyberfusion-common (2.10.11) unstable; urgency=low
+
+  - Remove unused dependencies
+  - Let find_executable raise ExecutableNotFound instead of Exception
+  - Change download_from_url root_directory default to None
+  - Remove hash_string_sha512
+  - Remove hash_string_postgres
+  - Do not require keyword arguments for hash_string_mariadb
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Wed, 03 May 2023 15:13:00 +0100
+
+python3-cyberfusion-common (2.10.10) unstable; urgency=low
+
+  - Remove File
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Wed, 03 May 2023 10:30:00 +0100
+
+python3-cyberfusion-common (2.10.9) unstable; urgency=low
+
+  - Use new QueueSupport
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Mon, 01 May 2023 15:01:00 +0100
+
+python3-cyberfusion-common (2.10.8) unstable; urgency=low
+
+  - Remove Command
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Fri, 28 Apr 2023 19:18:00 +0100
+
+python3-cyberfusion-common (2.10.7) unstable; urgency=low
+
+  - Remove Systemd
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Fri, 28 Apr 2023 12:31:00 +0100
+
+python3-cyberfusion-common (2.10.6) unstable; urgency=low
+
+  - Remove SoftwareDiscover
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Thu, 27 Apr 2023 21:25:00 +0100
+
+python3-cyberfusion-common (2.10.5) unstable; urgency=low
+
+  - Set queue item to unchanged when file to unlink does not exist
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Thu, 20 Apr 2023 23:52:00 +0100
+
+python3-cyberfusion-common (2.10.4.2) unstable; urgency=low
+
+  - Do not run stop when is_active is false (i.e. service is started)
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Mon, 17 Apr 2023 20:39:00 +0100
+
+python3-cyberfusion-common (2.10.4.1) unstable; urgency=low
+
+  - Do not report queue items as changed when systemd unit already enabled or disabled
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Mon, 17 Apr 2023 19:20:00 +0100
+
+python3-cyberfusion-common (2.10.4) unstable; urgency=low
+
+  - Remove run from CyberfusionUnit
+  - Do not run disable when is_enabled is false
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Mon, 17 Apr 2023 19:10:00 +0100
+
+python3-cyberfusion-common (2.10.3.2) unstable; urgency=low
+
+  - Do not run enable when is_enabled is true
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Mon, 17 Apr 2023 17:29:00 +0100
+
+python3-cyberfusion-common (2.10.3.1) unstable; urgency=low
+
+  - Add try_find_executable
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Thu, 16 Mar 2023 11:48:00 +0100
+
+python3-cyberfusion-common (2.10.3) unstable; urgency=low
+
+  - Add find_executable
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Thu, 16 Mar 2023 10:57:00 +0100
+
+python3-cyberfusion-common (2.10.2.8) unstable; urgency=low
+
+  - Add has_rabbitmq_ssl + has_rabbitmq_management_ssl to SoftwareDiscover
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Wed, 08 Mar 2023 15:39:00 +0100
+
+python3-cyberfusion-common (2.10.2.7) unstable; urgency=low
+
+  - Add has_elasticsearch_http_ssl to SoftwareDiscover
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Wed, 08 Mar 2023 14:53:00 +0100
+
+python3-cyberfusion-common (2.10.2.6) unstable; urgency=low
+
+  - Use singular enums
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Tue, 07 Mar 2023 19:17:00 +0100
+
+python3-cyberfusion-common (2.10.2.5) unstable; urgency=low
+
+  - Add cluster_configuration_manager_etcd_watcher to SoftwareDiscover
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Tue, 07 Mar 2023 18:09:00 +0100
+
+python3-cyberfusion-common (2.10.2.4) unstable; urgency=low
+
+  - No changes
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Sat, 04 Mar 2023 16:56:00 +0100
+
+python3-cyberfusion-common (2.10.2.3.1) unstable; urgency=low
+
+  - No changes
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Sat, 04 Mar 2023 15:12:00 +0100
+
+python3-cyberfusion-common (2.10.2.3) unstable; urgency=low
+
+  - SoftwareDiscover: Add etcd
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Tue, 17 Jan 2022 10:42:00 +0100
+
+python3-cyberfusion-common (2.10.2.2) unstable; urgency=low
+
+  - SoftwareDiscover: Detect Sway instead of node-monitor
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Wed, 7 Dec 2022 17:30:00 +0100
+
+python3-cyberfusion-common (2.10.2.1) unstable; urgency=low
+
+  - Use more paths from CyberfusionCommand
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Wed, 12 Oct 2022 21:42:00 +0100
+
+python3-cyberfusion-common (2.10.2) unstable; urgency=low
+
+  - CyberfusionConfig: Use properties
+  - CyberfusionCommand: Use more properties
+  - CyberfusionFile: Use cached properties
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Tue, 11 Oct 2022 17:13:00 +0100
+
+python3-cyberfusion-common (2.10.1.5) unstable; urgency=low
+
+  - CyberfusionFile: Use more properties
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Mon, 10 Oct 2022 10:56:00 +0100
+
+python3-cyberfusion-common (2.10.1.4.2) unstable; urgency=low
+
+  - Rename package to include python3
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Tue, 4 Oct 2022 16:24:00 +0100
+
+python3-cyberfusion-common (2.10.1.4.1) unstable; urgency=low
+
+  - SoftwareDiscover: Check if PATH_PREFIX_MEMSQLD exists before listing its contents
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Mon, 3 Oct 2022 09:57:00 +0100
+
+python3-cyberfusion-common (2.10.1.4) unstable; urgency=low
+
+  - SoftwareDiscover: Add has_fast_redirect
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Sun, 2 Oct 2022 16:47:00 +0100
+
+python3-cyberfusion-common (2.10.1.3) unstable; urgency=low
+
+  - SoftwareDiscover: Remove real-paths-watcher discovery
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Sun, 2 Oct 2022 14:58:00 +0100
+
+python3-cyberfusion-common (2.10.1.2) unstable; urgency=low
+
+  - Systemd: Add is_enabled
+  - Systemd: Convert get_is_active to property
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Sun, 2 Oct 2022 14:03:00 +0100
+
+python3-cyberfusion-common (2.10.1.1) unstable; urgency=low
+
+  - SoftwareDiscover: Add has_node_monitor
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Sun, 2 Oct 2022 13:37:00 +0100
+
+python3-cyberfusion-common (2.10.1) unstable; urgency=low
+
+  - SoftwareDiscover: Handle comments and empty lines in Redis config
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Sun, 2 Oct 2022 13:06:00 +0100
+
+python3-cyberfusion-common (2.10) unstable; urgency=low
+
+  - Add SoftwareDiscover
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Sun, 2 Oct 2022 12:50:00 +0100
+
+python3-cyberfusion-common (2.9.6.1.1) unstable; urgency=low
+
+  - CyberfusionFile: Do not require trailing newline when contents are empty
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Sat, 24 Sep 2022 15:28:00 +0100
+
+python3-cyberfusion-common (2.9.6.1) unstable; urgency=low
+
+  - CyberfusionFile: Require trailing newline
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Sat, 24 Sep 2022 15:13:00 +0100
+
+python3-cyberfusion-common (2.9.6) unstable; urgency=low
+
+  - CyberfusionFile: Add default_comment_character
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Fri, 16 Sep 2022 11:33:00 +0100
+
+python3-cyberfusion-common (2.9.5) unstable; urgency=low
+
+  - CyberfusionFile: Make mode required
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Thu, 15 Sep 2022 16:39:00 +0100
+
+python3-cyberfusion-common (2.9.4) unstable; urgency=low
+
+  - Require more keywords arguments
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Thu, 15 Sep 2022 15:55:00 +0100
+
+python3-cyberfusion-common (2.9.3.2.1) unstable; urgency=low
+
+  - Use new GitLab CI template
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Wed, 31 Aug 2022 10:47:00 +0100
+
+python3-cyberfusion-common (2.9.3.2) unstable; urgency=low
+
+  - Add root_directory to download_from_url
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Tue, 26 Jul 2022 11:27:00 +0100
+
+python3-cyberfusion-common (2.9.3.1) unstable; urgency=low
+
+  - CyberfusionTmpFile: Fix line when no age
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Tue, 26 Jul 2022 10:25:00 +0100
+
+python3-cyberfusion-common (2.9.3) unstable; urgency=low
+
+  - CyberfusionTmpFile: Add age
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Tue, 26 Jul 2022 10:11:00 +0100
+
+python3-cyberfusion-common (2.9.2) unstable; urgency=low
+
+  - Add function to download from URL
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Fri, 15 Jul 2022 17:21:00 +0100
+
+python3-cyberfusion-common (2.9.1) unstable; urgency=low
+
+  - FilesystemComparison: Set last path part to None in
+    get_nested_directory_structure as it cannot be deeper
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Thu, 7 Jul 2022 14:48:00 +0100
+
+python3-cyberfusion-common (2.9) unstable; urgency=low
+
+  - Add FilesystemComparison module
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Thu, 7 Jul 2022 12:08:00 +0100
+
+python3-cyberfusion-common (2.8.3.1) unstable; urgency=low
+
+  - Add APFS to FilesystemTypes
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Mon, 16 May 2022 19:30:00 +0100
+
+python3-cyberfusion-common (2.8.3) unstable; urgency=low
+
+  - CyberfusionCommand: Add allowed_return_codes
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Fri, 29 Apr 2022 19:36:00 +0100
+
+python3-cyberfusion-common (2.8.2) unstable; urgency=low
+
+  - Add function to get MD5 hash of file
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Tue, 26 Apr 2022 11:46:00 +0100
+
+python3-cyberfusion-common (2.8.1) unstable; urgency=low
+
+  - Add Filesystem module
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Thu, 31 Mar 2022 13:07:00 +0100
+
+python3-cyberfusion-common (2.8) unstable; urgency=low
+
+  - CyberfusionCommand: Add stderr capture
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Sun, 26 Mar 2022 13:36:00 +0100
+
+python3-cyberfusion-common (2.7) unstable; urgency=low
+
+  - CyberfusionQueues: Remove QUEUE_SYMLINK
+  - CyberfusionQueues: Raise IsSymlinkError when adding symlink to queue
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Sun, 20 Mar 2022 13:01:00 +0100
+
+python3-cyberfusion-common (2.6.2) unstable; urgency=low
+
+  - CyberfusionQueues: Add hide_tmp_unlink
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Fri, 11 Mar 2022 16:14:00 +0100
+
+python3-cyberfusion-common (2.6.1) unstable; urgency=low
+
+  - Add function to convert bytes to GiB
+
+ -- Ricardo Gonzalez <rgonzalez@cyberfusion.nl>  Thu, 10 Mar 2022 14:23:00 +0100
+
+python3-cyberfusion-common (2.6) unstable; urgency=low
+
+  - CyberfusionQueues: Create dict for queue instead of list of human-readable strings
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Wed, 9 Mar 2022 11:24:00 +0100
+
+python3-cyberfusion-common (2.5.6) unstable; urgency=low
+
+  - CyberfusionQueues: Add QUEUE_STOP
+  - CyberfusionQueues: Add QUEUE_DISABLE
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Tue, 8 Mar 2022 14:40:00 +0100
+
+python3-cyberfusion-common (2.5.5) unstable; urgency=low
+
+  - Add hash_string_mariadb function
+  - Add hash_string_postgres function
+
+ -- Ricardo Gonzalez <rgonzalez@cyberfusion.nl>  Thu, 24 Feb 2022 18:20:00 +0100
+
+python3-cyberfusion-common (2.5.4) unstable; urgency=low
+
+  - Add hash_string_sha512 function
+
+ -- Ricardo Gonzalez <rgonzalez@cyberfusion.nl>  Tue, 15 Feb 2022 12:45:00 +0100
+
+python3-cyberfusion-common (2.5.3.1) unstable; urgency=low
+
+  - Fix get_today_timestamp to be UTC
+
+ -- Ricardo Gonzalez <rgonzalez@cyberfusion.nl>  Wed, 26 Jan 2022 18:26:00 +0100
+
+python3-cyberfusion-common (2.5.3) unstable; urgency=low
+
+  - Add get_today_timestamp function
+  - Added tests for generate_random_string and get_today_timestamp
+
+ -- Ricardo Gonzalez <rgonzalez@cyberfusion.nl>  Wed, 26 Jan 2022 18:06:00 +0100
+
+python3-cyberfusion-common (2.5.2) unstable; urgency=low
+
+  - Add generate_random_string function
+
+ -- Ricardo Gonzalez <rgonzalez@cyberfusion.nl>  Wed, 19 Jan 2022 15:57:00 +0100
+
+python3-cyberfusion-common (2.5.1.2) unstable; urgency=low
+
+  - CyberfusionQueues: Don't create in QUEUE_MKDIR when path is symlink
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Tue, 2 Nov 2021 11:22:00 +0200
+
+python3-cyberfusion-common (2.5.1.1) unstable; urgency=low
+
+  - CyberfusionCommand: Rename run to execute
+  - Remove get_safe_shell_variable_name
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Wed, 20 Oct 2021 11:40:00 +0200
+
+python3-cyberfusion-common (2.5.1) unstable; urgency=low
+
+  - CyberfusionCommand: Raise exception when command element
+    (in command list, see 2.5 changelog) is not string
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Wed, 20 Oct 2021 11:35:00 +0200
+
+python3-cyberfusion-common (2.5) unstable; urgency=low
+
+  - CyberfusionCommand: Replace split by taking list as command
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Tue, 19 Oct 2021 16:40:00 +0200
+
+python3-cyberfusion-common (2.4.1) unstable; urgency=low
+
+  - CyberfusionCommand: Remove Optional type annotation for read and unlink
+  - Replace 'Okt' with 'Oct' in Debian changelog
+  - CyberfusionCommand: Rename split_command to _command
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Mon, 18 Oct 2021 16:43:00 +0200
+
+python3-cyberfusion-common (2.4) unstable; urgency=low
+
+  - Command: Add set_environment method to add/replace environment variables
+    instead of replacing original environment variables
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Sun, 17 Oct 2021 16:29:00 +0200
+
+python3-cyberfusion-common (2.3.4) unstable; urgency=low
+
+  - Add path to CyberfusionConfig
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Fri, 17 Sep 2021 18:57:00 +0200
+
+python3-cyberfusion-common (2.3.3.4) unstable; urgency=low
+
+  - Remove now ignored flake8 noqa's
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Mon, 30 Aug 2021 09:48:00 +0200
+
+python3-cyberfusion-common (2.3.3.3) unstable; urgency=low
+
+  - Add get_domain_is_wildcard function
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Tue, 17 Aug 2021 16:56:00 +0200
+
+python3-cyberfusion-common (2.3.3.2) unstable; urgency=low
+
+  - Bump debhelper compatibility level to 10
+  - Bump Standards-Version to 4.3.0
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Sat, 14 Aug 2021 20:27:00 +0200
+
+python3-cyberfusion-common (2.3.3.1) unstable; urgency=low
+
+  - CyberfusionTuxisCron: Add RC_WARNINGS and RC_ERRORS
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Mon, 2 Aug 2021 11:15:00 +0200
+
+python3-cyberfusion-common (2.3.3) unstable; urgency=low
+
+  - Add EmailAddresses
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Mon, 12 Jul 2021 09:42:00 +0200
+
+python3-cyberfusion-common (2.3.2) unstable; urgency=low
+
+  - Add get_safe_shell_variable_name function for generating safe shell variable name
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Tue, 6 Jul 2021 21:38:00 +0200
+
+python3-cyberfusion-common (2.3.1) unstable; urgency=low
+
+  - Add get_hostname function for retrieving local hostname
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Tue, 6 Jul 2021 15:43:00 +0200
+
+python3-cyberfusion-common (2.3) unstable; urgency=low
+
+  - Command: Remove dropping privileges for command execution
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Fri, 25 Jun 2021 12:33:00 +0200
+
+python3-cyberfusion-common (2.2.3) unstable; urgency=low
+
+  - CyberfusionCommand: Add read
+  - CyberfusionCommand: Add unlink
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Wed, 12 May 2021 14:59:00 +0200
+
+python3-cyberfusion-common (2.2.2) unstable; urgency=low
+
+  - CyberfusionCommand: Add stdin
+  - get_tmp_file: chmod file 0600
+  - CyberfusionTuxisCron: Remove SEARCH_PATH_CUSTOM and PATH_CRONTABS
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Mon, 10 May 2021 15:37:00 +0200
+
+python3-cyberfusion-common (2.2.1) unstable; urgency=low
+
+  - CyberfusionUnits: Add get_is_active
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Fri, 2 Apr 2021 15:01:00 +0200
+
+python3-cyberfusion-common (2.2) unstable; urgency=low
+
+  - Command: Allow dropping privileges for command execution
+  - CyberfusionCommand: Add path (cwd) and environment (env)
+  - Remove Validate
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Mon, 1 Mar 2021 13:38:00 +0200
+
+python3-cyberfusion-common (2.1.6.1) unstable; urgency=low
+
+  - chmod empty tmp file in File.write_to_tmp_file
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Mon, 11 Jan 2021 11:07:00 +0200
+
+python3-cyberfusion-common (2.1.6) unstable; urgency=low
+
+  - CyberfusionUnits: Add reload()
+  - CyberfusionUnit: Add DIRECTORY_SYSTEMD_OVERRIDE
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Wed, 6 Jan 2021 15:28:00 +0200
+
+python3-cyberfusion-common (2.1.5.2) unstable; urgency=low
+
+  - CyberfusionCommand: Do not stderr to file descriptor
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Tue, 5 Jan 2021 13:19:00 +0200
+
+python3-cyberfusion-common (2.1.5.1) unstable; urgency=low
+
+  - CyberfusionCommand: Derive BASH_BIN from PATH_BIN
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Mon, 4 Jan 2021 17:24:00 +0200
+
+python3-cyberfusion-common (2.1.5) unstable; urgency=low
+
+  - CyberfusionQueues: Add QUEUE_SYMLINK
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Wed, 23 Dec 2020 15:37:00 +0200
+
+python3-cyberfusion-common (2.1.4) unstable; urgency=low
+
+  - Avoid queueing same item multple times
+  - Add command to queue when running in preview
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Fri, 18 Dec 2020 10:01:00 +0200
+
+python3-cyberfusion-common (2.1.3.1) unstable; urgency=low
+
+  - Add missing NOLOGIN_BIN and PATH_CRONTABS constants
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Thu, 17 Dec 2020 13:50:00 +0200
+
+python3-cyberfusion-common (2.1.3) unstable; urgency=low
+
+  - Generic code styling improvements
+  - Add Queue
+  - Add File
+  - Simplify Config
+  - Update styling configurations
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Thu, 17 Dec 2020 13:08:00 +0200
+
+python3-cyberfusion-common (2.1.2) unstable; urgency=low
+
+  - Add code convention enforcement
+  - Add BASH_BIN, PATH_*, VARIABLE_PATH to CyberfusionCommand
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Fri, 4 Dec 2020 11:16:00 +0200
+
+python3-cyberfusion-common (2.1.1) unstable; urgency=low
+
+  - Add 'run' to CyberfusionUnit
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Sat, 28 Nov 2020 12:44:00 +0200
+
+python3-cyberfusion-common (2.1.0) unstable; urgency=low
+
+  - Add CyberfusionCommand for executing shell commands
+  - Add CyberfusionUnit for managing systemd units
+  - Add get_tmp_file function for retrieving tmp file
+  - Add CyberfusionValidator for validation
+  - Add CyberfusionUnits class for handling multiple systemd units
+  - Add CyberfusionTuxisCron for general purpose tuxis-cron actions
+  - Add CyberfusionTmpFile and CyberfusionTmpFiles for general purpose systemd-tmpfiles actions
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Tue, 24 Oct 2020 17:09:00 +0200
+
+python3-cyberfusion-common (2.0.1) unstable; urgency=low
+
+  - Remove duplicate line
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Wed, 21 Oct 2020 12:51:00 +0200
+
+python3-cyberfusion-common (2.0) unstable; urgency=low
+
+  - Remove old, unused elements (Validation, Exception)
+  - Rewrite Config class
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Fri, 18 Sep 2020 16:19:00 +0200
+
+python3-cyberfusion-common (1.1) unstable; urgency=low
+
+  - Rename common-setup.py to setup.py for compatibility purposes
+
+ -- Yvan Watchman <ywatchman@cyberfusion.nl>  Thu, 07 Oct 2019 17:49:00 +0200
+
+python3-cyberfusion-common (1.1) unstable; urgency=low
+
+  - Add missing dependencies for validation
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Thu, 06 Jun 2019 22:20:00 +0200
+
+python3-cyberfusion-common (1.0) unstable; urgency=low
+
+  - Initial release
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Fri, 31 May 2019 23:20:00 +0200
