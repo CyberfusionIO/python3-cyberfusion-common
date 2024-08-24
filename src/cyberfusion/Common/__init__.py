@@ -23,9 +23,7 @@ class EmailAddresses:
     """Cyberfusion email addresses."""
 
     SYSTEM_MESSAGES_CORE = "system-messages.core@cyberfusion.io"
-    SYSTEM_MESSAGES_INFRASTRUCTURE = (
-        "system-messages.infrastructure@cyberfusion.io"
-    )
+    SYSTEM_MESSAGES_INFRASTRUCTURE = "system-messages.infrastructure@cyberfusion.io"
     SUPPORT = "support@cyberfusion.io"
 
 
@@ -52,9 +50,7 @@ def try_find_executable(name: str) -> Optional[str]:
     return shutil.which(name)
 
 
-def download_from_url(
-    url: str, *, root_directory: Optional[str] = None
-) -> str:
+def download_from_url(url: str, *, root_directory: Optional[str] = None) -> str:
     """Download from URL.
 
     Large files are supported due to use of chunking and streaming.

@@ -1,5 +1,3 @@
-import configparser
-
 from cyberfusion.Common.Config import CyberfusionConfig
 
 
