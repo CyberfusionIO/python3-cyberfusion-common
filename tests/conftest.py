@@ -1,13 +1,9 @@
-import getpass
-import grp
 import os
-import pwd
 import shutil
 import uuid
 from typing import Generator
 
 import pytest
-from pytest_mock import MockerFixture
 
 
 @pytest.fixture
@@ -60,9 +56,7 @@ def filesystem_comparison_workspace_directory() -> Generator[str, None, None]:
     # Create only left or right directories
 
     left_only_directory = os.path.join(left_directory, "left_only_directory")
-    right_only_directory = os.path.join(
-        right_directory, "right_only_directory"
-    )
+    right_only_directory = os.path.join(right_directory, "right_only_directory")
 
     os.mkdir(left_only_directory)
     os.mkdir(right_only_directory)

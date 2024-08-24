@@ -7,7 +7,7 @@ from tests._utilities import traverse_dict
 
 
 def test_get_different_files_in_directories(
-    filesystem_comparison_workspace_directory: Generator[str, None, None]
+    filesystem_comparison_workspace_directory: Generator[str, None, None],
 ) -> None:
     comparison = FilesystemComparison.get_different_files_in_directories(
         os.path.join(filesystem_comparison_workspace_directory, "left"),
@@ -25,7 +25,7 @@ def test_get_different_files_in_directories(
 
 
 def test_get_files_only_in_left_directory(
-    filesystem_comparison_workspace_directory: Generator[str, None, None]
+    filesystem_comparison_workspace_directory: Generator[str, None, None],
 ) -> None:
     comparison = FilesystemComparison.get_files_only_in_left_directory(
         os.path.join(filesystem_comparison_workspace_directory, "left"),
@@ -40,7 +40,7 @@ def test_get_files_only_in_left_directory(
 
 
 def test_get_files_only_in_right_directory(
-    filesystem_comparison_workspace_directory: Generator[str, None, None]
+    filesystem_comparison_workspace_directory: Generator[str, None, None],
 ) -> None:
     comparison = FilesystemComparison.get_files_only_in_right_directory(
         os.path.join(filesystem_comparison_workspace_directory, "left"),
@@ -55,7 +55,7 @@ def test_get_files_only_in_right_directory(
 
 
 def test_get_directories_only_in_left_directory(
-    filesystem_comparison_workspace_directory: Generator[str, None, None]
+    filesystem_comparison_workspace_directory: Generator[str, None, None],
 ) -> None:
     comparison = FilesystemComparison.get_directories_only_in_left_directory(
         os.path.join(filesystem_comparison_workspace_directory, "left"),
@@ -72,7 +72,7 @@ def test_get_directories_only_in_left_directory(
 
 
 def test_get_directories_only_in_right_directory(
-    filesystem_comparison_workspace_directory: Generator[str, None, None]
+    filesystem_comparison_workspace_directory: Generator[str, None, None],
 ) -> None:
     comparison = FilesystemComparison.get_directories_only_in_right_directory(
         os.path.join(filesystem_comparison_workspace_directory, "left"),
@@ -89,7 +89,7 @@ def test_get_directories_only_in_right_directory(
 
 
 def test_get_nested_directory_structure_different_files_in_directories_left(
-    filesystem_comparison_workspace_directory: Generator[str, None, None]
+    filesystem_comparison_workspace_directory: Generator[str, None, None],
 ) -> None:
     comparison = [
         i[0]  # Left
@@ -99,8 +99,8 @@ def test_get_nested_directory_structure_different_files_in_directories_left(
         )
     ]
 
-    nested_directory_structure = (
-        FilesystemComparison.get_nested_directory_structure(comparison)
+    nested_directory_structure = FilesystemComparison.get_nested_directory_structure(
+        comparison
     )
 
     root = traverse_dict(
@@ -112,7 +112,7 @@ def test_get_nested_directory_structure_different_files_in_directories_left(
 
 
 def test_get_nested_directory_structure_different_files_in_directories_right(
-    filesystem_comparison_workspace_directory: Generator[str, None, None]
+    filesystem_comparison_workspace_directory: Generator[str, None, None],
 ) -> None:
     comparison = [
         i[1]  # Right
@@ -122,8 +122,8 @@ def test_get_nested_directory_structure_different_files_in_directories_right(
         )
     ]
 
-    nested_directory_structure = (
-        FilesystemComparison.get_nested_directory_structure(comparison)
+    nested_directory_structure = FilesystemComparison.get_nested_directory_structure(
+        comparison
     )
 
     root = traverse_dict(
@@ -135,15 +135,15 @@ def test_get_nested_directory_structure_different_files_in_directories_right(
 
 
 def test_get_nested_directory_structure_files_only_in_left_directory(
-    filesystem_comparison_workspace_directory: Generator[str, None, None]
+    filesystem_comparison_workspace_directory: Generator[str, None, None],
 ) -> None:
     comparison = FilesystemComparison.get_files_only_in_left_directory(
         os.path.join(filesystem_comparison_workspace_directory, "left"),
         os.path.join(filesystem_comparison_workspace_directory, "right"),
     )
 
-    nested_directory_structure = (
-        FilesystemComparison.get_nested_directory_structure(comparison)
+    nested_directory_structure = FilesystemComparison.get_nested_directory_structure(
+        comparison
     )
 
     root = traverse_dict(
@@ -155,15 +155,15 @@ def test_get_nested_directory_structure_files_only_in_left_directory(
 
 
 def test_get_nested_directory_structure_files_only_in_right_directory(
-    filesystem_comparison_workspace_directory: Generator[str, None, None]
+    filesystem_comparison_workspace_directory: Generator[str, None, None],
 ) -> None:
     comparison = FilesystemComparison.get_files_only_in_right_directory(
         os.path.join(filesystem_comparison_workspace_directory, "left"),
         os.path.join(filesystem_comparison_workspace_directory, "right"),
     )
 
-    nested_directory_structure = (
-        FilesystemComparison.get_nested_directory_structure(comparison)
+    nested_directory_structure = FilesystemComparison.get_nested_directory_structure(
+        comparison
     )
 
     root = traverse_dict(
@@ -175,15 +175,15 @@ def test_get_nested_directory_structure_files_only_in_right_directory(
 
 
 def test_get_nested_directory_structure_directories_only_in_left_directory(
-    filesystem_comparison_workspace_directory: Generator[str, None, None]
+    filesystem_comparison_workspace_directory: Generator[str, None, None],
 ) -> None:
     comparison = FilesystemComparison.get_directories_only_in_left_directory(
         os.path.join(filesystem_comparison_workspace_directory, "left"),
         os.path.join(filesystem_comparison_workspace_directory, "right"),
     )
 
-    nested_directory_structure = (
-        FilesystemComparison.get_nested_directory_structure(comparison)
+    nested_directory_structure = FilesystemComparison.get_nested_directory_structure(
+        comparison
     )
 
     root = traverse_dict(
@@ -195,15 +195,15 @@ def test_get_nested_directory_structure_directories_only_in_left_directory(
 
 
 def test_get_nested_directory_structure_directories_only_in_right_directory(
-    filesystem_comparison_workspace_directory: Generator[str, None, None]
+    filesystem_comparison_workspace_directory: Generator[str, None, None],
 ) -> None:
     comparison = FilesystemComparison.get_directories_only_in_right_directory(
         os.path.join(filesystem_comparison_workspace_directory, "left"),
         os.path.join(filesystem_comparison_workspace_directory, "right"),
     )
 
-    nested_directory_structure = (
-        FilesystemComparison.get_nested_directory_structure(comparison)
+    nested_directory_structure = FilesystemComparison.get_nested_directory_structure(
+        comparison
     )
 
     root = traverse_dict(

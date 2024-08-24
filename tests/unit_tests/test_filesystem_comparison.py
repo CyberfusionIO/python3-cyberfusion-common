@@ -5,20 +5,16 @@ from cyberfusion.Common import FilesystemComparison
 
 
 def test_get_different_files_in_directories_with_recursive_dircmps(
-    filesystem_comparison_workspace_directory: Generator[str, None, None]
+    filesystem_comparison_workspace_directory: Generator[str, None, None],
 ) -> None:
     # Test _get_recursive_dircmps with get_different_files_in_directories (could
     # be any other function)
 
     os.mkdir(
-        os.path.join(
-            filesystem_comparison_workspace_directory, "left", "common_dir"
-        )
+        os.path.join(filesystem_comparison_workspace_directory, "left", "common_dir")
     )
     os.mkdir(
-        os.path.join(
-            filesystem_comparison_workspace_directory, "right", "common_dir"
-        )
+        os.path.join(filesystem_comparison_workspace_directory, "right", "common_dir")
     )
 
     with open(

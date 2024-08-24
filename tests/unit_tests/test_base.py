@@ -8,9 +8,7 @@ from cyberfusion.Common import download_from_url, generate_random_string
 def test_download_from_url_custom_root_directory() -> None:
     assert (
         Path(
-            download_from_url(
-                "https://example.com", root_directory=str(Path.home())
-            )
+            download_from_url("https://example.com", root_directory=str(Path.home()))
         ).parent
         == Path.home()
     )

@@ -57,9 +57,7 @@ def get_filesystem_type(path: str) -> FilesystemType:
     # If this yields no results (i.e. the path is missing), next() raises StopIteration
 
     partition = next(
-        filter(
-            lambda x: x.mountpoint == path, psutil.disk_partitions(all=True)
-        )
+        filter(lambda x: x.mountpoint == path, psutil.disk_partitions(all=True))
     )
 
     return FilesystemType(partition.fstype)
