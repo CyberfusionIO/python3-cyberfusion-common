@@ -1,3 +1,9 @@
+python3-cyberfusion-common (2.10.11.3.3) unstable; urgency=low
+
+  - Remove deprecated setup.py in favour of pyproject.toml
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Sat, 24 Aug 2024 11:36:00 +0200
+
 python3-cyberfusion-common (2.10.11.3.2) unstable; urgency=low
 
   - Add pydist file for Depend-ing packages
