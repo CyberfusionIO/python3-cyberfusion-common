@@ -154,3 +154,11 @@ def get_md5_hash(path: str) -> str:
             hash_.update(chunk)
 
     return base64.b64encode(hash_.digest()).decode()
+
+
+def ensure_trailing_newline(text: str) -> str:
+    """Add trailing newline to text if missing."""
+    if not text.endswith("\n"):
+        return text + "\n"
+
+    return text

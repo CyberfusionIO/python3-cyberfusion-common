@@ -14,6 +14,7 @@ from cyberfusion.Common import (
     get_today_timestamp,
     hash_string_mariadb,
     try_find_executable,
+    ensure_trailing_newline,
 )
 from cyberfusion.Common.exceptions import ExecutableNotFound
 
@@ -123,3 +124,18 @@ def test_convert_bytes_gib() -> None:
 
 def test_get_md5_hash() -> None:
     assert get_md5_hash("large_file.zip") == "c14liqPHO4T8t8bGUbpWMw=="
+
+
+# ensure_trailing_newline
+
+
+def test_ensure_trailing_newline_added() -> None:
+    CONTENTS = "test"
+
+    assert ensure_trailing_newline(CONTENTS) == CONTENTS + "\n"
+
+
+def test_ensure_trailing_newline_present() -> None:
+    CONTENTS = "test\n"
+
+    assert ensure_trailing_newline(CONTENTS) == CONTENTS

@@ -1,3 +1,9 @@
+python3-cyberfusion-common (2.11) unstable; urgency=low
+
+  - Add ensure_trailing_newline
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Sat, 07 Dec 2024 03:29:00 +0200
+
 python3-cyberfusion-common (2.10.11.3.3) unstable; urgency=low
 
   - Remove deprecated setup.py in favour of pyproject.toml
