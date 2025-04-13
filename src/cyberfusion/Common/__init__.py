@@ -23,7 +23,8 @@ class EmailAddresses:
     """Cyberfusion email addresses."""
 
     SYSTEM_MESSAGES_CORE = "system-messages.core@cyberfusion.io"
-    SYSTEM_MESSAGES_INFRASTRUCTURE = "system-messages.infrastructure@cyberfusion.io"
+    SYSTEM_MESSAGES_INFRASTRUCTURE = "system-messages.foundation@cyberfusion.io"  # Backward compatibility
+    SYSTEM_MESSAGES_FOUNDATION = "system-messages.foundation@cyberfusion.io"
     SUPPORT = "support@cyberfusion.io"
 
 
