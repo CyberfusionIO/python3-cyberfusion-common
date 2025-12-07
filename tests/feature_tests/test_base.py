@@ -46,13 +46,13 @@ def test_try_find_executable_not_found() -> None:
 # download_from_url
 
 
-def test_download_from_url() -> None:
-    url = "https://example.com"
+def test_download_from_url(mock_url: tuple[str, str]) -> None:
+    url, text = mock_url
 
     path = download_from_url(url)
 
     assert os.path.isfile(path)
-    assert os.path.getsize(path) == 1256
+    assert open(path, "r").read() == text
     assert os.stat(path).st_mode == 33152
 
 
