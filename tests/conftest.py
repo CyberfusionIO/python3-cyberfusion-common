@@ -1,3 +1,5 @@
+import faker
+from requests_mock import Mocker
 import os
 import shutil
 import uuid
@@ -64,3 +66,13 @@ def filesystem_comparison_workspace_directory() -> Generator[str, None, None]:
     yield path
 
     shutil.rmtree(path)
+
+
+@pytest.fixture
+def mock_url(faker: faker.Faker, requests_mock: Mocker) -> tuple[str, str]:
+    url = faker.url()
+    text = faker.word()
+
+    requests_mock.get(url, text=text)
+
+    return url, text
