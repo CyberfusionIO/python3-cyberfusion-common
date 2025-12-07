@@ -5,19 +5,19 @@ from cyberfusion.Common import download_from_url, generate_random_string
 # download_from_url
 
 
-def test_download_from_url_custom_root_directory() -> None:
+def test_download_from_url_custom_root_directory(mock_url: tuple[str, str]) -> None:
+    url, _ = mock_url
+
     assert (
-        Path(
-            download_from_url("https://example.com", root_directory=str(Path.home()))
-        ).parent
+        Path(download_from_url(url, root_directory=str(Path.home()))).parent
         == Path.home()
     )
 
 
-def test_download_from_url_default_root_directory() -> None:
-    assert Path(
-        download_from_url("https://example.com", root_directory=None)
-    ).parent == Path("/tmp")
+def test_download_from_url_default_root_directory(mock_url: tuple[str, str]) -> None:
+    url, _ = mock_url
+
+    assert Path(download_from_url(url, root_directory=None)).parent == Path("/tmp")
 
 
 # generate_random_string
