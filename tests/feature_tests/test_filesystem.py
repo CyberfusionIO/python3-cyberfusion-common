@@ -26,24 +26,18 @@ def disk_partitions_side_effect(all: bool = False) -> List[sdiskpart]:
             mountpoint="/",
             fstype="ext4",
             opts="rw,relatime,errors=remount-ro",
-            maxfile=255,
-            maxpath=4096,
         ),
         sdiskpart(
             device="/dev/sda1",
             mountpoint="/boot",
             fstype="ext2",
             opts="rw,relatime",
-            maxfile=255,
-            maxpath=4096,
         ),
         sdiskpart(
             device="[fdb7:b01e:7b8e:0:10:10:10:1],[fdb7:b01e:7b8e:0:10:10:10:2],[fdb7:b01e:7b8e:0:10:10:10:3]:/testpath",
             mountpoint="/mnt/ceph",
             fstype="ceph",
             opts="rw,noatime,name=testuser,secret=<hidden>,acl,readdir_max_entries=32768,readdir_max_bytes=16777216",
-            maxfile=255,
-            maxpath=4096,
         ),
     ]
 
