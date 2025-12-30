@@ -1,8 +1,8 @@
 """Helper for handling filesystem."""
 
+import subprocess
 import os
 from enum import Enum
-from pathlib import Path
 
 import psutil
 
@@ -65,15 +65,9 @@ def get_filesystem_type(path: str) -> FilesystemType:
 
 def get_directory_size(path: str) -> int:
     """Get size of directory."""
-
-    # CephFS is a special case, as CephFS has extended attributes to determine
-    # size
-
     is_ceph = get_filesystem_type(get_filesystem(path)) == FilesystemType.CEPH
 
     if is_ceph:
         return int(os.getxattr(path, CEPH_NAME_ATTRIBUTE_RBYTES).decode("utf-8"))  # type: ignore[attr-defined]
 
-    # Loop through directory for filesystems without special implementation
-
-    return sum(f.stat().st_size for f in Path(path).rglob("*") if f.is_file())
+    return int(subprocess.check_output(["du", "-s", path], text=True).split()[0])
