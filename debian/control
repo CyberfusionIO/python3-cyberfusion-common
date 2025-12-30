@@ -7,6 +7,6 @@ Standards-Version: 4.3.0
 
 Package: python3-cyberfusion-common
 Architecture: all
-Depends: python3, ${python3:Depends}, ${misc:Depends}
+Depends: python3, coreutils, ${python3:Depends}, ${misc:Depends}
 Description: Common utilities.
  Common utilities.
