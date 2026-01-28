@@ -3,7 +3,7 @@ import sys
 from typing import List
 
 import pytest
-from psutil._common import sdiskpart
+from psutil._ntuples import sdiskpart
 from pytest_mock import MockerFixture
 
 from cyberfusion.Common.Filesystem import (
