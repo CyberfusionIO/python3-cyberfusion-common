@@ -11,7 +11,7 @@ authors = [
     { name = "Cyberfusion", email = "support@cyberfusion.io" },
 ]
 dependencies = [
-    "psutil==7.2.1",
+    "psutil==7.2.2",
     "requests==2.32.5",
 ]
 
