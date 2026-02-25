@@ -23,6 +23,7 @@ class FilesystemType(Enum):
     CEPH = "ceph"
     OVERLAY = "overlay"  # Usually for Docker
     APFS = "apfs"  # Development on macOS
+    NFS4 = "nfs4"
 
 
 def get_filesystem(path: str) -> str:

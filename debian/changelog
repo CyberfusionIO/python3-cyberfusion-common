@@ -1,3 +1,9 @@
+python3-cyberfusion-common (2.12.3) unstable; urgency=low
+
+  - Add NFS4 to filesystem types
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Wed, 25 Feb 2026 04:15:00 +0200
+
 python3-cyberfusion-common (2.12.2) unstable; urgency=low
 
   - Update dependencies
