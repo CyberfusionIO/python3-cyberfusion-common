@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "python3-cyberfusion-common"
-version = "2.12.3"
+version = "2.12.4"
 description = "Common utilities."
 readme = "README.md"
 authors = [
