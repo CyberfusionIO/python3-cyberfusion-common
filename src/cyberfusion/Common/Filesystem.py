@@ -71,4 +71,4 @@ def get_directory_size(path: str) -> int:
     if is_ceph:
         return int(os.getxattr(path, CEPH_NAME_ATTRIBUTE_RBYTES).decode("utf-8"))  # type: ignore[attr-defined]
 
-    return int(subprocess.check_output(["du", "-s", path], text=True).split()[0])
+    return int(subprocess.check_output(["du", "-sb", path], text=True).split()[0])
