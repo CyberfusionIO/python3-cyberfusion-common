@@ -11,6 +11,7 @@ from cyberfusion.Common.Filesystem import (
     get_filesystem,
     get_filesystem_type,
 )
+import sys
 
 
 def disk_partitions_side_effect(all: bool = False) -> List[sdiskpart]:
@@ -58,6 +59,10 @@ def test_get_filesystem_type_not_exists(mocker: MockerFixture) -> None:
         get_filesystem_type("/tmp")
 
 
+@pytest.mark.skipif(
+    sys.platform == "darwin",
+    reason="`-b` doesn't exist on BSD du",
+)
 def test_get_directory_size(
     mocker: MockerFixture, tmp_path: PosixPath, faker: faker.Faker
 ) -> None:
