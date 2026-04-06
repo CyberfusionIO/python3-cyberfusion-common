@@ -1,6 +1,7 @@
 python3-cyberfusion-common (2.12.5) UNRELEASED; urgency=low
 
   - get_directory_size: fix (non-CephFS) output not always being bytes
+  - get_directory_size: remove special handling for CephFS
 
  -- William Edwards <wedwards@cyberfusion.nl>  Mon, 06 Apr 2026 14:55:00 +0200
 
