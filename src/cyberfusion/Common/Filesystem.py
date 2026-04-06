@@ -6,8 +6,6 @@ from enum import Enum
 
 import psutil
 
-CEPH_NAME_ATTRIBUTE_RBYTES = "ceph.dir.rbytes"
-
 
 class FilesystemType(Enum):
     """Filesystem types.
@@ -66,9 +64,4 @@ def get_filesystem_type(path: str) -> FilesystemType:
 
 def get_directory_size(path: str) -> int:
     """Get size of directory."""
-    is_ceph = get_filesystem_type(get_filesystem(path)) == FilesystemType.CEPH
-
-    if is_ceph:
-        return int(os.getxattr(path, CEPH_NAME_ATTRIBUTE_RBYTES).decode("utf-8"))  # type: ignore[attr-defined]
-
     return int(subprocess.check_output(["du", "-sb", path], text=True).split()[0])
