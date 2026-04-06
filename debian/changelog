@@ -1,3 +1,9 @@
+python3-cyberfusion-common (2.12.5) UNRELEASED; urgency=low
+
+  - get_directory_size: fix (non-CephFS) output not always being bytes
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Mon, 06 Apr 2026 14:55:00 +0200
+
 python3-cyberfusion-common (2.12.4) unstable; urgency=low
 
   - Update dependencies
