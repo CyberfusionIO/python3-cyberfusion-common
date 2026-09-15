@@ -1,19 +1,21 @@
 [build-system]
-requires = ["setuptools"]
+requires = [
+    "setuptools",
+]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "python3-cyberfusion-common"
-version = "2.12.5"
+version = "2.12.6"
 description = "Common utilities."
 readme = "README.md"
 authors = [
     { name = "Cyberfusion", email = "support@cyberfusion.io" },
 ]
 dependencies = [
-    "psutil==7.2.2",
-    "requests==2.33.1",
+    "psutil>=7.2,<8.0",
+    "requests>=2.33,<3.0",
 ]
 
 [project.urls]
-"Source" = "https://github.com/CyberfusionIO/python3-cyberfusion-common"
+Source = "https://github.com/CyberfusionIO/python3-cyberfusion-common"
