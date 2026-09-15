@@ -1,3 +1,9 @@
+python3-cyberfusion-common (2.12.6) unstable; urgency=medium
+
+  * Don't pin library versions to exact versions
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Tue, 15 Sep 2026 16:16:16 +0000
+
 python3-cyberfusion-common (2.12.5) unstable; urgency=low
 
   - get_directory_size: fix (non-CephFS) output not always being bytes
