@@ -1,6 +1,7 @@
 """Helper classes for Cyberfusion scripts."""
 
 import base64
+import hashlib
 import os
 import secrets
 import shutil
@@ -165,3 +166,22 @@ def ensure_trailing_newline(text: str) -> str:
         return text + "\n"
 
     return text
+
+
+def get_md5_hashes_for_chunks(path: str, chunk_size_bytes: int) -> list[str]:
+    parts = []
+
+    with open(path, "rb") as f:
+        while True:
+            chunk = f.read(chunk_size_bytes)
+
+            if not chunk:  # EOF
+                break
+
+            md5_hash = hashlib.md5(chunk).digest()
+
+            md5_hash_base64 = base64.b64encode(md5_hash).decode("utf-8")
+
+            parts.append(md5_hash_base64)
+
+    return parts
